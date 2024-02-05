@@ -5,7 +5,7 @@ export default function Form() {
     let [title,setTitle]=useState("");
     let [body,setBody]=useState("");
     let [userid,setuserId]=useState("");
- 
+
     function submitForm() {
         let data = {id,title,body,userid};
         fetch('https://jsonplaceholder.typicode.com/posts', {
@@ -19,7 +19,6 @@ export default function Form() {
             result.json().then((res)=>{
                 console.log(res)
             })
-            
          })
     }
   return (
@@ -30,7 +29,6 @@ export default function Form() {
         Body<input type='text' value={body} name="body" onChange={(e)=>{setBody(e.target.value)}}/><br/>
         UserID<input type='text'value={userid} name="userid" onChange={(e)=>{setuserId(e.target.value)}}/><br/>
         <button type='submit' onClick={submitForm}>save</button>
-      
     </div>
   )
 }

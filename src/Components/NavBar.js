@@ -13,6 +13,7 @@ function NavBar(props) {
             <li><NavLink to='/user/b'>User</NavLink></li>
             <li><NavLink to='/login'>Login</NavLink></li>
             <li><NavLink to='/form'>Form</NavLink></li>
+            <li><NavLink to='/prev'>PREV</NavLink></li>
             </ul>
         </div>
     );
