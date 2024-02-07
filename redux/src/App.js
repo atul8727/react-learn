@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import User from './User';
+import HomeContainer  from './Containers/HomeContainer';
 
 function App() {
     return (
       <div className="App">
-        <h1>App Componenr</h1>
+            <h1>App Componenr</h1>
+            <HomeContainer />
         <User data={{name:"atul"}}/>
       </div>
     );
