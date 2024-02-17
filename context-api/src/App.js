@@ -10,7 +10,8 @@ function App() {
 
         return (
             <div className="App">
-                <CommonContext.Provider value={{ text, setText,text2,setText2}}>
+                <CommonContext.Provider value={ { text, setText,text2,setText2} }>
+
                     <h1>example of common context</h1>
                     <Mains />
                 </CommonContext.Provider>
